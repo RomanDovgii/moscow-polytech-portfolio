@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Загрузка проекта</title>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="header__logo logo">
+      <img src="" alt="" class="logo__img">
+    </a>
+    <nav class="header__navigation navigation">
+      <a href="" class="navigation_link">Поступающим</a>
+      <a href="" class="navigation_link">Обучающимся</a>
+      <a href="" class="navigation_link">Работникам</a>
+    </nav>
+  </header>
+  <main>
+    <section class="promo promo--upload">
+      <h1 class="promo__heading">Портфолио <br>Московского Политеха</h1>
+      <p class="promo__text">
+        Портфолио по проектам студентво с направления Графика, Графический, Транспортный и&nbsp;Промышленный дизайн.
+      </p>
+    </section>
+    <section class="upload-form">
+      <form action="" class="upload-form__form">
+        <label class="upload-form__label upload-form__label--name">
+          <span class="upload-form__name">Название проекта</span>
+          <input class="upload-form__input upload-form__input--name" type="text" name="name" placeholder="до 30 символов" required>
+
+        </label>
+        <label class="upload-form__label upload-form__label--discipline">
+          <span class="upload-form__name">Название дисциплины</span>
+          <input class="upload-form__input upload-form__input--discipline" type="text" name="discipline" placeholder="до 30 символов" required>
+
+        </label>
+        <label class="upload-form__label upload-form__label--description">
+          <span class="upload-form__name">Описание проекта</span>
+          <textarea class="upload-form__input upload-form__input--description" name="description" placeholder="до 200 символов" required></textarea>
+
+        </label>
+        <label class="upload-form__label upload-form__label--tags">
+          <span class="upload-form__name">Теги</span>
+          <input class="upload-form__input upload-form__input--tags" type="text" name="tags" placeholder="до 8 тегов">
+
+        </label>
+        <label class="upload-form__label upload-form__label--cover">
+          <span class="upload-form__name">Обложка</span>
+          <span class="upload-form__description">Файл jpeg, png, gif с пропорциями 3:4</span>
+          <input class="upload-form__input upload-form__input--cover" type="file" name="cover" accept="image/jpeg, image/png, image/gif" required>
+
+        </label>
+        <label class="upload-form__label upload-form__label--project">
+          <span class="upload-form__name">Проект</span>
+          <span class="upload-form__description">До 10 файлов jpeg, png, gif с пропорциями 3:4</span>
+          <input class="upload-form__input upload-form__input--project" type="file" name="project" accept="image/jpeg, image/png, image/gif" multiple required>
+
+        </label>
+        <label class="upload-form__label upload-form__label--video">
+          <span class="upload-form__name">Видео</span>
+          <input class="upload-form__input upload-form__input--video" type="file" name="video" accept="video/*" required>
+        </label>
+
+        <p class="upload-form__alert">
+          Проект появится в общем доступе после того, как пройдет модерацию.
+        </p>
+
+        <button class="upload-form__submit" type="submit">Загрузить проект</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
