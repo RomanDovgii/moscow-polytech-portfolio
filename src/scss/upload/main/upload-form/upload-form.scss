@@ -1,0 +1,23 @@
+
+.upload-form {
+    width: 100%;
+    padding-left: 5%;
+    height: 1000px; // for develop
+
+
+    div {
+        width: 40%;
+    }
+    
+    @media (min-width: 588px) {
+        background-image: url('./../img/upload-form-back.png');
+        background-size: 50%;
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 587px) {
+        display: flex;
+        justify-content: center;
+    }
+}
