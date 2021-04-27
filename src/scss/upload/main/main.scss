@@ -1,0 +1,26 @@
+// blocks
+// @import './load-proj/load-proj.scss'; // блок с формой для отправки проекта
+
+// elements
+
+.main {
+    width: 100%;
+    padding-left: 5%;
+    height: 1000px; // for develop
+
+
+    div {
+        width: 40%;
+    }
+    
+    @media (min-width: 588px) {
+        background-image: url('./../img/back-tablet-desc-main.png');
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 587px) {
+        display: flex;
+        justify-content: center;
+    }
+}
