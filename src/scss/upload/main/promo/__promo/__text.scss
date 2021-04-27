@@ -6,4 +6,8 @@
     @media (min-width: $md) {
         width: 40vw
     }
+
+    @media (max-width: $md) and (min-width: $sm) {
+        width: 50vw
+    }
 }

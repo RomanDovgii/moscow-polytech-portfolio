@@ -1,0 +1,16 @@
+.upload-form__form {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 588px) { /// tablet
+        width: 50vw;
+    }
+
+    @media (max-width: $md) and (min-width: 588px) {
+        width: 40vw;
+    }
+
+    @media (max-width: 587px) {
+        width: 80vw;
+    }
+}

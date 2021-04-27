@@ -1,9 +1,16 @@
+// elems
+@import './__upload-form/__form';
+@import './__upload-form/__input';
+@import './__upload-form/__lable';
+@import './__upload-form/__name';
+
+// modif
+
 
 .upload-form {
     width: 100%;
     padding-left: 5%;
     height: 1000px; // for develop
-
 
     div {
         width: 40%;

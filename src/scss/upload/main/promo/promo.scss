@@ -6,8 +6,11 @@
 .promo {
     width: 100vw;
     color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 1px;
 
-    .promo__wrapper {
+    .promo__wrapper {        
         .promo__lable, .promo__title {
             margin-bottom: 40px;
         }
@@ -25,18 +28,30 @@
         }
     }
     
-    @media (min-width: $md) {
+    @media (min-width: $md) { /// tablet
         height: 40vw;
         background-image: url('./../img/promo-desktop.jpg');
+
+        .promo__wrapper {
+            margin: 10vw 0 0 5vw;
+        }
     }
 
     @media (max-width: $md) and (min-width: 588px) {
         height: 112vw;
         background-image: url('./../img/promo-tablet.jpg');
+
+        .promo__wrapper {
+            margin: 150px 0 0 5vw;
+        }
     }
 
     @media (max-width: 587px) {
         height: 162vw;
         background-image: url('./../img/promo-mobile.jpg');
+
+        .promo__wrapper {
+            margin: 50vw 0 0 5vw;
+        }
     }
 }
