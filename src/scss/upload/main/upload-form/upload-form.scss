@@ -13,16 +13,16 @@
 
 .upload-form {
     width: 100%;
-    padding-left: 5%;
 
-    @media (min-width: 588px) {
+    @media (min-width: $sm) {
         background-image: url('./../img/upload-form-back.png');
         background-size: 50%;
         background-position: 100% 0;
         background-repeat: no-repeat;
+        padding-left: 5%;
     }
 
-    @media (max-width: 587px) {
+    @media (max-width: $sm) {
         display: flex;
         justify-content: center;
     }

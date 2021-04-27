@@ -3,11 +3,11 @@
     flex-direction: column;
     padding-top: 30px;
 
-    @media (min-width: 588px) { /// tablet
+    @media (min-width: $sm) { /// tablet
         width: 45vw;
     }
 
-    @media (max-width: $md) and (min-width: 588px) {
+    @media (max-width: $md) and (min-width: $sm) {
         width: 40vw;
     }
 
