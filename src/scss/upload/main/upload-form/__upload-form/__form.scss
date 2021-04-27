@@ -1,9 +1,10 @@
 .upload-form__form {
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
 
     @media (min-width: 588px) { /// tablet
-        width: 50vw;
+        width: 45vw;
     }
 
     @media (max-width: $md) and (min-width: 588px) {
@@ -12,5 +13,17 @@
 
     @media (max-width: 587px) {
         width: 80vw;
+    }
+
+    .upload-form__label {
+        margin-top: 38px;
+    }
+
+    .upload-form__description {
+        margin-bottom: 13px;
+    }
+
+    .upload-form__submit {
+        margin-top: 86px;
     }
 }

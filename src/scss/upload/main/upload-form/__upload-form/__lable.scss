@@ -1,5 +1,8 @@
 .upload-form__label {
     display: flex;
     flex-direction: column ;
-    margin-top: 38px;
+
+    .upload-form__input {
+        margin-top: 2px;
+    }
 }

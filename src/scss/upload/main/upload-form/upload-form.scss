@@ -3,19 +3,18 @@
 @import './__upload-form/__input';
 @import './__upload-form/__lable';
 @import './__upload-form/__name';
+@import './__upload-form/__description';
+@import './__upload-form/__alert';
+@import './__upload-form/__input';
+@import './__upload-form/__submit';
 
 // modif
-
+@import './--upload-form/--description.scss';
 
 .upload-form {
     width: 100%;
     padding-left: 5%;
-    height: 1000px; // for develop
 
-    div {
-        width: 40%;
-    }
-    
     @media (min-width: 588px) {
         background-image: url('./../img/upload-form-back.png');
         background-size: 50%;
