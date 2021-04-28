@@ -14,7 +14,7 @@
             margin-bottom: 40px;
         }
     
-        @media (max-width: 587px) {
+        @media (max-width: $sm) {
             .promo__text {
                 position: absolute;
                 clip: rect(1px, 1px, 1px, 1px);
@@ -45,7 +45,7 @@
         }
     }
 
-    @media (max-width: 587px) {
+    @media (max-width: $sm) {
         height: 162vw;
         background-image: url('./../img/promo-mobile.jpg');
 
