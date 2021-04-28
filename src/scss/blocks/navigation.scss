@@ -1,0 +1,32 @@
+@use "../mixins";
+
+.navigation {
+  display: flex;
+}
+
+.navigation__link {
+  text-decoration: none;
+
+  @include mixins.verdanaFamily;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.34rem;
+  color: #fff;
+
+  margin-top: 8px;
+
+  transition: opacity 0.3s;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &:hover,
+  :focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

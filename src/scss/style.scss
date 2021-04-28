@@ -1,3 +1,9 @@
-@import "./variables.scss";
-@import "./mixins.scss";
-@import "./general.scss";
+@use "./variables.scss";
+@use "./mixins.scss";
+@use "./general.scss";
+
+@use "./blocks/header.scss";
+@use "./blocks/logo.scss";
+@use "./blocks/navigation.scss";
+
+@use "./blocks/promo.scss";

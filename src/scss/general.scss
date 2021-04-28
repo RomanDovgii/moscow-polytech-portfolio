@@ -1,7 +1,9 @@
+@use "mixins";
+
 *,
 *::before,
 *::after {
-  @include reset;
+  @include mixins.reset;
   box-sizing: border-box;
 }
 
@@ -20,5 +22,5 @@ html {
 }
 
 body {
-  @include verdanaFamily;
+  @include mixins.verdanaFamily;
 }

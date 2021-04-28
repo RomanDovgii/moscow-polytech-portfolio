@@ -1,0 +1,30 @@
+@use "../mixins";
+
+.promo {
+  min-height: 102.7rem;
+  background-color: #595288;
+
+  display: flex;
+  justify-content: center;
+}
+
+.promo__wrapper {
+  max-width: 120.5rem;
+  width: 100%;
+
+  padding-top: 19rem;
+  padding-left: 5.5rem;
+}
+
+.promo__heading {
+  @include mixins.pageHeading;
+  color: #fff;
+}
+
+.promo__text {
+  @include mixins.mainText;
+  color: #fff;
+
+  margin-top: 6rem;
+  max-width: 50.6rem;
+}

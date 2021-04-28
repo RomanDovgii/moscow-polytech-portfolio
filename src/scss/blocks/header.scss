@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.header__wrapper {
+  max-width: 120.5rem;
+  width: 100%;
+  display: flex;
+}
+
+.header__navigation {
+  margin-right: 0;
+  margin-left: auto;
+}
