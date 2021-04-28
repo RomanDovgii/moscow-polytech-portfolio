@@ -1,0 +1,19 @@
+@use "../mixins";
+
+.search__input {
+  background: none;
+
+  height: 5.6rem;
+  width: 43rem;
+
+  padding: 1.5rem 2.4rem;
+
+  border: 0.1rem solid #fff;
+
+  @include mixins.mainText;
+  color: #fff;
+
+  &::placeholder {
+    color: #fff;
+  }
+}
