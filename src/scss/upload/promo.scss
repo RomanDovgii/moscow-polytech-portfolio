@@ -1,0 +1,90 @@
+.promo {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 1px;
+
+    .promo__lable, .promo__title {
+        margin-bottom: 0.875rem;
+    }
+
+    .promo__heading {
+        margin-left: 5%;
+        margin-top: 10%;
+        font-size: 1.929em;
+        line-height: 1.688em;
+        font-weight: 700;
+    }
+
+    .promo__text {
+        margin-left: 5%;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: $sm) {
+    .promo {
+        height: 40vw;
+        background-image: url('./../img/promo-desktop.jpg');
+
+        .promo__heading {
+            margin-top: 10vw;
+        }
+
+        .promo__heading, .promo__text {
+            margin-left: 5%;
+        }
+
+        .promo__text {
+            width: 50%
+        }
+    }
+}
+
+@media (max-width: $md) and (min-width: $sm) {
+    .promo {
+        height: 112vw;
+        background-image: url('./../img/promo-tablet.jpg');
+
+        
+        .promo__heading {
+            margin-top: 150px;
+        }
+
+        .promo__heading, .promo__text {
+            margin-left: 5%;
+        }
+
+        .promo__text {
+            width: 50vw;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .promo {
+        height: 162vw;
+        background-image: url('./../img/promo-mobile.jpg');
+
+        
+        .promo__heading {
+            margin-top: 50%;
+        }
+
+        .promo__heading, .promo__text {
+            margin-left: 5%;
+        }
+
+        .promo__text {
+            position: absolute;
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 0;
+            border: 0;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+        }
+    }
+}

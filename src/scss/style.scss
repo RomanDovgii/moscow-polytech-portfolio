@@ -1,3 +1,9 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 @import "./general.scss";
+
+// blocks:
+@import './upload/header.scss';
+@import './upload/navigation.scss';
+@import './upload/promo.scss';
+@import './upload/upload-form.scss';
