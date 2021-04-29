@@ -2,3 +2,32 @@
   padding: 0;
   margin: 0;
 }
+
+@mixin gilroyFamily {
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont,Segoe UI, Helvetica Neue, Arial,sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+@mixin verdanaFamily {
+  font-family: Verdana,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+@mixin heading {
+  @include gilroyFamily;
+  font-weight: 700;
+  font-size: 2.7rem;
+  line-height: 3.3rem;
+}
+
+@mixin projectHeading {
+  @include gilroyFamily;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+}
+
+@mixin mainText {
+  @include verdanaFamily;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}

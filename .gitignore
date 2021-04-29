@@ -12,5 +12,11 @@ Thumbs.db
 build/
 public/
 node_modules/
+<<<<<<< HEAD
 public/bundle.js
 public/bundle.js.map
+=======
+build/bundle.js
+build/bundle.js.map
+build/
+>>>>>>> main

@@ -1,12 +1,9 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 @import "./general.scss";
-@import './fonts.scss';
 
-// blocks 
-@import './upload/header/header.scss';
-@import './upload/main/main.scss';
-
-body {
-    font-family: Gilory;
-}
+// blocks:
+@import './upload/header.scss';
+@import './upload/navigation.scss';
+@import './upload/promo.scss';
+@import './upload/upload-form.scss';
