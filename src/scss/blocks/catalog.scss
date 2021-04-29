@@ -8,25 +8,31 @@
 
 .catalog__list {
   list-style: none;
-  max-width: 120.5rem;
+  max-width: 121.5rem;
   width: 100%;
 
   display: flex;
   flex-wrap: wrap;
 
   justify-content: center;
+
+  margin-left: -0.4rem;
 }
 
 .catalog__project-card {
   margin-top: 0.4rem;
-  flex-basis: 33%;
+  margin-left: 0.4rem;
+  flex-basis: 40rem;
+}
 
-  &:nth-child(2n) {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.catalog__wrapper {
+  max-width: 120.5rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
 }
 
 .catalog__page-nav {
-  align-self: flex-end;
+  margin-top: 4rem;
 }

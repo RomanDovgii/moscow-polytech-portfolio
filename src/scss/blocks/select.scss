@@ -1,6 +1,8 @@
 @use "../mixins";
 
 .select__input {
+  appearance: none;
+
   width: 100%;
   height: 5.7rem;
 
@@ -21,4 +23,5 @@
 .select__option {
   @include mixins.mainText;
   color: #000;
+  line-height: 3rem;
 }

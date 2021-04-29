@@ -32,11 +32,10 @@ module.exports = {
         path: path.resolve(__dirname, `build`),
     },
     devServer: {
-        contentBase: path.resolve(__dirname, `build`),
+        contentBase: path.resolve(__dirname, `build/`),
         open: false,
         port: 9111,
         historyApiFallback: true,
-        contentBase: path.resolve(__dirname, `/build`),
         watchContentBase: true,
     },
     module: {
