@@ -4,74 +4,87 @@
     background-size: 100%;
     padding: 1px;
 
-    .promo__wrapper {        
-        .promo__lable, .promo__title {
-            margin-bottom: 40px;
-        }
-
-        .promo__heading {
-            font-size: 27px;
-            line-height: 41,05px;
-            font-weight: 700;
-        }
-
-        .promo__lable {
-            font-size: 11px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        .promo__text {
-            font-size: 14px;
-            line-height: 20px;
-            margin-top: 50px;
-        
-            @media (min-width: $md) {
-                width: 40vw
-            }
-        
-            @media (max-width: $md) and (min-width: $sm) {
-                width: 50vw
-            }
-        }
-    
-        @media (max-width: $sm) {
-            .promo__text {
-                position: absolute;
-                clip: rect(1px, 1px, 1px, 1px);
-                padding: 0;
-                border: 0;
-                height: 1px;
-                width: 1px;
-                overflow: hidden;
-            }
-        }
+    .promo__lable, .promo__title {
+        margin-bottom: 0.875rem;
     }
-    
-    @media (min-width: $md) { /// tablet
+
+    .promo__heading {
+        margin-left: 5%;
+        margin-top: 10%;
+        font-size: 1.929em;
+        line-height: 1.688em;
+        font-weight: 700;
+    }
+
+    .promo__text {
+        margin-left: 5%;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: $sm) {
+    .promo {
         height: 40vw;
         background-image: url('./../img/promo-desktop.jpg');
 
-        .promo__wrapper {
-            margin: 10vw 0 0 5vw;
+        .promo__heading {
+            margin-top: 10vw;
+        }
+
+        .promo__heading, .promo__text {
+            margin-left: 5%;
+        }
+
+        .promo__text {
+            width: 50%
         }
     }
+}
 
-    @media (max-width: $md) and (min-width: 588px) {
+@media (max-width: $md) and (min-width: $sm) {
+    .promo {
         height: 112vw;
         background-image: url('./../img/promo-tablet.jpg');
 
-        .promo__wrapper {
-            margin: 150px 0 0 5vw;
+        
+        .promo__heading {
+            margin-top: 150px;
+        }
+
+        .promo__heading, .promo__text {
+            margin-left: 5%;
+        }
+
+        .promo__text {
+            width: 50vw;
         }
     }
+}
 
-    @media (max-width: $sm) {
+@media (max-width: $sm) {
+    .promo {
         height: 162vw;
         background-image: url('./../img/promo-mobile.jpg');
 
-        .promo__wrapper {
-            margin: 50vw 0 0 5vw;
+        
+        .promo__heading {
+            margin-top: 50%;
+        }
+
+        .promo__heading, .promo__text {
+            margin-left: 5%;
+        }
+
+        .promo__text {
+            position: absolute;
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 0;
+            border: 0;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
         }
     }
 }
