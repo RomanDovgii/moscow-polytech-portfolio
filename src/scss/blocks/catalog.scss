@@ -19,10 +19,14 @@
 
 .catalog__project-card {
   margin-top: 0.4rem;
-  flex-basis: 40rem;
+  flex-basis: 33%;
 
   &:nth-child(2n) {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.catalog__page-nav {
+  align-self: flex-end;
 }

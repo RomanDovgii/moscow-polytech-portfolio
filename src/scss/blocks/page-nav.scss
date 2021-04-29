@@ -1,0 +1,35 @@
+@use "../mixins";
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav__pages {
+  @include mixins.verdanaFamily;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #c0c0c0;
+}
+
+.page-nav__current {
+  color: #000;
+}
+
+.page-nav__link {
+  display: block;
+
+  width: 5.1rem;
+  height: 5.1rem;
+
+  border: 1px solid #000;
+  border-radius: 50%;
+
+  &--next {
+    margin-left: 1.7rem;
+  }
+
+  &--previous {
+    margin-left: 2.8rem;
+  }
+}
