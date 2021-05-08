@@ -1,0 +1,84 @@
+@use "../mixins.scss";
+
+.student__wrapper {
+  max-width: 120.5rem;
+  width: 100%;
+  margin: 0 auto;
+
+  margin-top: -6.65rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  &--project {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.student__content {
+  max-width: 50%;
+
+  &--project {
+    display: flex;
+
+    .student__info {
+      margin-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.student__other {
+  margin-right: 0;
+  margin-left: auto ;
+  display: flex;
+  flex-direction: column;
+}
+
+.student__img {
+  border-radius: 50%;
+}
+
+.student__name {
+  margin-top: 4.2rem;
+
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.385rem;
+
+  @include mixins.gilroyFamily;
+}
+
+.student__specialization {
+  margin-top: 1.2rem;
+
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.9rem;
+}
+
+.student__about {
+  margin-top: 4.6rem;
+
+  max-width: 33rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.student__moto {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+
+  order: 1;
+  max-width: 45rem;
+  text-align: right;
+
+  @include mixins.gilroyFamily;
+}

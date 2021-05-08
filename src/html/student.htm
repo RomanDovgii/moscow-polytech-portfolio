@@ -40,59 +40,74 @@
   <main>
     <section class="promo promo--student">
       <div class="promo__wrapper">
-        <h1 class="promo__heading">Портфолио Иванова Ивана Ивановича</h1>
+        <h1 class="promo__heading">Портфолио студента</h1>
       </div>
     </section>
     <section class="student">
-      <img src="" alt="" class="student__img">
-      <h1 class="student__name"><span class="visually-hidden"></span></h1>
-      <p class="student__specialization"></p>
-      <p class="student__about"></p>
-      <p class="student__moto"></p>
-      <ul class="stundet__techs techs">
-        <li class="techs__item techs__item--ai">
-          <span class="visually-hidden">
-            <span class="techs__name">Adobe Illustrator</span>
-            или в сокращении
-          </span>
-          <a href="#" class="techs__link">Ai</a>
-        </li>
-        <li class="techs__item  techs__item--ps">
-          <span class="visually-hidden">
-            <span class="techs__name">Adobe Photoshop</span>
-            или в сокращении
-          </span>
-          <a href="#" class="techs__link">Ps</a>
-        </li>
-        <li class="techs__item  techs__item--id">
-          <span class="visually-hidden">
-            <span class="techs__name">Adobe InDesign</span>
-            или в сокращении
-          </span>
-          <a href="#" class="techs__link">Id</a>
-        </li>
-        <li class="techs__item  techs__item--ae">
-          <span class="visually-hidden">
-            <span class="techs__name">Adobe AfterEffects</span>
-            или в сокращении
-          </span>
-          <a href="#" class="techs__link">Ae</a>
-        </li>
-        <li class="techs__item  techs__item--pr">
-          <span class="visually-hidden">
-            <span class="techs__name">Adobe Premiere Pro</span>
-            или в сокращении
-          </span>
-          <a href="#" class="techs__link">Pr</a>
-        </li>
-      </ul>
+      <div class="student__wrapper">
+        <div class="student__content">
+          <img src="https://i.pravatar.cc/133" alt="Иванов Иван Иванович" width="133" height="133" class="student__img">
+          <h1 class="student__name">Иванов Иван Иванович</h1>
+          <p class="student__specialization">Графический дизайн, 3 курс</p>
+          <p class="student__about">
+            Амбициозный, целеустремленный
+            графический дизайнер, довольнокоммуникабельный и когнитивно гибкий.
+            Буду рад выслушать Вас и помочь воплотить
+            идеи в жизнь!
+          </p>
+        </div>
+
+        <div class="student__other">
+          <p class="student__moto">
+            Плоский&nbsp;минималистичный
+            дизайн — моя стезя
+          </p>
+          <ul class="stundet__techs techs">
+            <li class="techs__item techs__item--ai">
+              <span class="visually-hidden">
+                <span class="techs__name">Adobe Illustrator</span>
+                или в сокращении
+              </span>
+              <a href="#" class="techs__link techs__link--ai">Ai</a>
+            </li>
+            <li class="techs__item">
+              <span class="visually-hidden">
+                <span class="techs__name">Adobe Photoshop</span>
+                или в сокращении
+              </span>
+              <a href="#" class="techs__link techs__link--ps">Ps</a>
+            </li>
+            <li class="techs__item">
+              <span class="visually-hidden">
+                <span class="techs__name">Adobe InDesign</span>
+                или в сокращении
+              </span>
+              <a href="#" class="techs__link techs__link--id">Id</a>
+            </li>
+            <li class="techs__item">
+              <span class="visually-hidden">
+                <span class="techs__name">Adobe AfterEffects</span>
+                или в сокращении
+              </span>
+              <a href="#" class="techs__link techs__link--ae">Ae</a>
+            </li>
+            <li class="techs__item">
+              <span class="visually-hidden">
+                <span class="techs__name">Adobe Premiere Pro</span>
+                или в сокращении
+              </span>
+              <a href="#" class="techs__link techs__link--pr">Pr</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
     </section>
-    <section class="catalog">
-      <h2 class="catalog__heading">Каталог работ</h2>
+    <section class="catalog catalog--student">
       <ul class="catalog__list">
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
           <a class="project-card__heading" href="#">Название проекта</a>
           <div class="project-card__info">
@@ -101,7 +116,9 @@
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
+          </a>
           <a class="project-card__heading" href="#">Название проекта</a>
           <div class="project-card__info">
             <p class="project-card__student">Иван Иванович Иванов</p>
@@ -109,18 +126,8 @@
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
-          </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
-          <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
-            <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
-          </div>
-        </li>
-        <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
           <a class="project-card__heading" href="#">Название проекта</a>
           <div class="project-card__info">
@@ -129,25 +136,35 @@
           </div>
         </li>
       </ul>
-      <div class="catalog__page-nav page-nav">
-        <p class="page-nav__pages">
-          <span class="visually-hidden">страница</span>
-          <span class="page-nav__current">01</span> - <span class="page-nav__total">25</span>
-           <span class="visually-hidden">страниц всего</span>
-        </p>
-        <a href="#" class="page-nav__link page-nav__link--previous">
-          <span class="visually-hidden">Предыдущая страница</span>
-        </a>
-        <a href="#" class="page-nav__link page-nav__link--next">
-          <span class="visually-hidden">Следующая страница</span>
-        </a>
+      <div class="catalog__wrapper">
+        <div class="catalog__page-nav page-nav">
+          <p class="page-nav__pages">
+            <span class="visually-hidden">страница</span>
+            <span class="page-nav__current">01</span> - <span class="page-nav__total">25</span>
+             <span class="visually-hidden">страниц всего</span>
+          </p>
+          <a href="#" class="page-nav__link page-nav__link--previous">
+            <svg width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.646446 4.11617C0.451185 4.31144 0.451185 4.62802 0.646446 4.82328L3.82843 8.00526C4.02369 8.20052 4.34027 8.20052 4.53553 8.00526C4.7308 7.81 4.7308 7.49342 4.53553 7.29815L1.70711 4.46973L4.53553 1.6413C4.7308 1.44604 4.7308 1.12945 4.53553 0.934193C4.34027 0.73893 4.02369 0.73893 3.82843 0.934193L0.646446 4.11617ZM19 3.96973L1 3.96973V4.96973L19 4.96973V3.96973Z" fill="black"/>
+            </svg>
+            <span class="visually-hidden">Предыдущая страница</span>
+          </a>
+          <a href="#" class="page-nav__link page-nav__link--next">
+            <svg width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.646446 4.11617C0.451185 4.31144 0.451185 4.62802 0.646446 4.82328L3.82843 8.00526C4.02369 8.20052 4.34027 8.20052 4.53553 8.00526C4.7308 7.81 4.7308 7.49342 4.53553 7.29815L1.70711 4.46973L4.53553 1.6413C4.7308 1.44604 4.7308 1.12945 4.53553 0.934193C4.34027 0.73893 4.02369 0.73893 3.82843 0.934193L0.646446 4.11617ZM19 3.96973L1 3.96973V4.96973L19 4.96973V3.96973Z" fill="black"/>
+            </svg>
+            <span class="visually-hidden">Следующая страница</span>
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="controls">
-      <a href="#" class="controls__more">Больше работ</a>
-      <a href="#" class="controls__download">Скачать портфолио</a>
-      <a href="#" class="controls__message">Написать студенту</a>
+      <div class="controls__wrapper">
+        <a href="#" class="controls__more">Больше работ</a>
+        <a href="#" class="controls__download">Скачать портфолио</a>
+        <a href="#" class="controls__message">Написать студенту</a>
+      </div>
     </section>
   </main>
 </body>
