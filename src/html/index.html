@@ -10,8 +10,25 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <a href="#" class="header__logo logo">
-        <img width="125" height="37" src="" alt="Московский Политех" class="logo__img">
+      <a href="./index.html" class="header__logo logo">
+        <picture>
+          <source type="image/webp" srcset="img/polytech-logo/webp/polytech-logo@0.5.webp 0.5x,
+                                           img/polytech-logo/webp/polytech-logo@0.75.webp 0.75x,
+                                           img/polytech-logo/webp/polytech-logo@1.webp 1x,
+                                           img/polytech-logo/webp/polytech-logo@2.webp 2x,
+                                           img/polytech-logo/webp/polytech-logo@3.webp 3x,
+                                           img/polytech-logo/webp/polytech-logo@4.webp 4x,
+                                          ">
+
+          <source type="image/png" srcset="img/polytech-logo/png/polytech-logo@0.5.png 0.5x,
+                                           img/polytech-logo/png/polytech-logo@0.75.png 0.75x,
+                                           img/polytech-logo/png/polytech-logo@1.png 1x,
+                                           img/polytech-logo/png/polytech-logo@2.png 2x,
+                                           img/polytech-logo/png/polytech-logo@3.png 3x,
+                                           img/polytech-logo/png/polytech-logo@4.png 4x,
+                                          ">
+          <img width="125" height="37" src="./img/polytech-logo/png/polytech-logo@1.png" alt="Московский Политех" class="logo__img">
+        </picture>
       </a>
       <nav class="header__navigation navigation">
         <a href="#" class="navigation__link">Поступающим</a>
@@ -29,12 +46,14 @@
         </p>
       </div>
     </section>
-    <section class="filter">
+    <section class="filter" id="filters">
       <div class="filter__wrapper">
         <h2 class="visually-hidden">Фильтры</h2>
         <div class="filter__tabs">
-          <h2 class="filter__projects">Проекты</h2>
-          <a href="#" class="filter__upload">Загрузить проект</a>
+          <a class="filter__projects" href="#filters">
+            <h2>Проекты</h2>
+          </a>
+          <a href="./upload.html" class="filter__upload">Загрузить проект</a>
         </div>
         <form class="filter__filters">
 
@@ -144,90 +163,92 @@
       <h2 class="visually-hidden">Каталог работ</h2>
       <ul class="catalog__list">
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
+            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
             <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <img src="" alt="" class="project-card__img">
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
+          </a>
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
+            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
             <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
+            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
             <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
+            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
             <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
+            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
             <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
+            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
             <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
+            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
             <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
+            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
             <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
+            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
             <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
           </div>
         </li>
@@ -240,9 +261,15 @@
              <span class="visually-hidden">страниц всего</span>
           </p>
           <a href="#" class="page-nav__link page-nav__link--previous">
+            <svg width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.646446 4.11617C0.451185 4.31144 0.451185 4.62802 0.646446 4.82328L3.82843 8.00526C4.02369 8.20052 4.34027 8.20052 4.53553 8.00526C4.7308 7.81 4.7308 7.49342 4.53553 7.29815L1.70711 4.46973L4.53553 1.6413C4.7308 1.44604 4.7308 1.12945 4.53553 0.934193C4.34027 0.73893 4.02369 0.73893 3.82843 0.934193L0.646446 4.11617ZM19 3.96973L1 3.96973V4.96973L19 4.96973V3.96973Z" fill="black"/>
+            </svg>
             <span class="visually-hidden">Предыдущая страница</span>
           </a>
           <a href="#" class="page-nav__link page-nav__link--next">
+            <svg width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.646446 4.11617C0.451185 4.31144 0.451185 4.62802 0.646446 4.82328L3.82843 8.00526C4.02369 8.20052 4.34027 8.20052 4.53553 8.00526C4.7308 7.81 4.7308 7.49342 4.53553 7.29815L1.70711 4.46973L4.53553 1.6413C4.7308 1.44604 4.7308 1.12945 4.53553 0.934193C4.34027 0.73893 4.02369 0.73893 3.82843 0.934193L0.646446 4.11617ZM19 3.96973L1 3.96973V4.96973L19 4.96973V3.96973Z" fill="black"/>
+            </svg>
             <span class="visually-hidden">Следующая страница</span>
           </a>
         </div>
@@ -272,30 +299,30 @@
       <h2 class="catalog__heading">Больше работ</h2>
       <ul class="catalog__list">
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
+            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
             <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <img src="" alt="" class="project-card__img">
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
             <p class="project-card__student">Иван Иванович Иванов</p>
             <p class="project-card__discipline">Проектирование крупных информационных проектов</p>
           </div>
         </li>
         <li class="catalog__project-card project-card">
-          <a href="#" class="project-card__link">
-            <img src="" alt="" class="project-card__img">
+          <a href="./project.html" class="project-card__link">
+            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
           </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
+          <a class="project-card__heading" href="./project.html">Название проекта</a>
           <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
+            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
             <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
           </div>
         </li>

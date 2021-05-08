@@ -25,18 +25,20 @@ module.exports = {
     mode: `development`,
     entry: [
         `./src/js/index.js`,
-        `./src/scss/style.scss`
+        `./src/scss/style.scss`,
+        `./src/html/index.html`
     ],
     output: {
         filename: `./js/bundle.js`,
         path: path.resolve(__dirname, `build`),
     },
+    target: `web`,
+    devtool: `source-map`,
     devServer: {
-        contentBase: path.resolve(__dirname, `build/`),
-        open: false,
+        contentBase: path.resolve(__dirname, `build`),
+        open: true,
         port: 9111,
-        historyApiFallback: true,
-        watchContentBase: true,
+        watchContentBase: true
     },
     module: {
         rules: [
@@ -45,9 +47,6 @@ module.exports = {
                 include: path.resolve(__dirname, `src/js`),
                 exclude: /(node_modules)/,
                 use: [
-                    {
-                        loader: `source-map-loader`
-                    },
                     {
                         loader: `babel-loader`,
                         options: {

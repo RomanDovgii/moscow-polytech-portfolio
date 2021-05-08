@@ -1,11 +1,21 @@
 @use "../mixins";
 
 .promo {
-  min-height: 102.7rem;
-  background-color: #595288;
+  min-height: 100vh;
 
   display: flex;
   justify-content: center;
+
+  background:
+  linear-gradient(rgba(#000, 0.3), rgba(#000, 0.2)),
+  url("https://picsum.photos/1920/1080");
+
+  background-attachment: fixed;
+
+  &--student {
+    min-height: 25vh;
+    padding-bottom: 10vh;
+  }
 }
 
 .promo__wrapper {

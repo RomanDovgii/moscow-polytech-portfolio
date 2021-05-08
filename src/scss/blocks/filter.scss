@@ -5,15 +5,17 @@
   width: 100%;
 
   margin: 0 auto;
-  margin-top: -18.2rem;
+  margin-top: -11.4rem;
 }
 
 .filter__tabs {
   display: flex;
 }
 
-.filter__projects,
+.filter__projects h2,
 .filter__upload {
+  text-decoration: none;
+
   min-width: 29.7rem;
   min-height: 11.4rem;
 
@@ -25,13 +27,13 @@
 }
 
 .filter__projects {
+  text-decoration: none;
   background-color: #4b6eb9;
 
   color: #fff;
 }
 
 .filter__upload {
-  text-decoration: none;
 
   background-color: #fff;
 

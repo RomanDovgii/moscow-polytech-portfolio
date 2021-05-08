@@ -17,7 +17,9 @@
 }
 
 .page-nav__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 5.1rem;
   height: 5.1rem;
@@ -27,6 +29,7 @@
 
   &--next {
     margin-left: 1.7rem;
+    transform: rotate(180deg);
   }
 
   &--previous {

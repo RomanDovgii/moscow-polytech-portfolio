@@ -10,8 +10,25 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <a href="#" class="header__logo logo">
-        <img width="125" height="37" src="" alt="Московский Политех" class="logo__img">
+      <a href="./index.html" class="header__logo logo">
+        <picture>
+          <source type="image/webp" srcset="img/polytech-logo/webp/polytech-logo@0.5.webp 0.5x,
+                                           img/polytech-logo/webp/polytech-logo@0.75.webp 0.75x,
+                                           img/polytech-logo/webp/polytech-logo@1.webp 1x,
+                                           img/polytech-logo/webp/polytech-logo@2.webp 2x,
+                                           img/polytech-logo/webp/polytech-logo@3.webp 3x,
+                                           img/polytech-logo/webp/polytech-logo@4.webp 4x,
+                                          ">
+
+          <source type="image/png" srcset="img/polytech-logo/png/polytech-logo@0.5.png 0.5x,
+                                           img/polytech-logo/png/polytech-logo@0.75.png 0.75x,
+                                           img/polytech-logo/png/polytech-logo@1.png 1x,
+                                           img/polytech-logo/png/polytech-logo@2.png 2x,
+                                           img/polytech-logo/png/polytech-logo@3.png 3x,
+                                           img/polytech-logo/png/polytech-logo@4.png 4x,
+                                          ">
+          <img width="125" height="37" src="./img/polytech-logo/png/polytech-logo@1.png" alt="Московский Политех" class="logo__img">
+        </picture>
       </a>
       <nav class="header__navigation navigation">
         <a href="#" class="navigation__link">Поступающим</a>
@@ -22,10 +39,13 @@
   </header>
   <main>
     <section class="promo promo--upload">
-      <h1 class="promo__heading">Портфолио <br>Московского Политеха</h1>
-      <p class="promo__text">
-        Портфолио по проектам студентов с направления Графика, Графический, Транспортный и&nbsp;Промышленный дизайн.
-      </p>
+      <div class="promo__wrapper">
+        <h1 class="promo__heading">Загрузите ваш проект<br>
+                                    на портфолио Московского Политеха</h1>
+        <p class="promo__text">
+          Процесс загрузки невероятно просто — всего лишь заполните форму ниже.
+        </p>
+      </div>
     </section>
     <section class="upload-form">
       <form action="" class="upload-form__form">
