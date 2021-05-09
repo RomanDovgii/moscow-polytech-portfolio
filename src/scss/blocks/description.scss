@@ -1,0 +1,27 @@
+@use "../mixins.scss";
+
+.description__wrapper {
+  max-width: 120.5rem;
+  width: 100%;
+
+  margin: 0 auto;
+
+  padding-bottom: 2rem;
+}
+
+.description__heading {
+  font-weight: 700;
+  font-size: 2.7rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @include mixins.gilroyFamily;
+}
+
+.description__text {
+  font-size: 1.4rem;
+
+  column-count: 2;
+  column-width: 49%;
+  column-gap: 2%;
+}

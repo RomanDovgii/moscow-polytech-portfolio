@@ -6,6 +6,14 @@
   justify-content: space-between;
 
   margin-left: -1.5rem;
+
+  &--project {
+    justify-content: flex-start;
+
+    a {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .techs__item {

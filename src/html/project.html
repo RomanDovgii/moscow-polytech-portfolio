@@ -63,8 +63,28 @@
 
     <section class="big-slider">
       <div class="big-slider__wrapper">
-        <div class="big-slider__slide">
-          <img src="" alt="" width="1000" height="1000" class="big-slider__img">
+        <div class="big-slider__controls">
+          <button class="big-slider__button big-slider__button--prev">
+            <svg width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.646446 4.11617C0.451185 4.31144 0.451185 4.62802 0.646446 4.82328L3.82843 8.00526C4.02369 8.20052 4.34027 8.20052 4.53553 8.00526C4.7308 7.81 4.7308 7.49342 4.53553 7.29815L1.70711 4.46973L4.53553 1.6413C4.7308 1.44604 4.7308 1.12945 4.53553 0.934193C4.34027 0.73893 4.02369 0.73893 3.82843 0.934193L0.646446 4.11617ZM19 3.96973L1 3.96973V4.96973L19 4.96973V3.96973Z" fill="currentColor"/>
+            </svg>
+            <span class="visually-hidden">
+              Предыдущий слайд
+            </span>
+          </button>
+          <button class="big-slider__button big-slider__button--next">
+            <svg width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.646446 4.11617C0.451185 4.31144 0.451185 4.62802 0.646446 4.82328L3.82843 8.00526C4.02369 8.20052 4.34027 8.20052 4.53553 8.00526C4.7308 7.81 4.7308 7.49342 4.53553 7.29815L1.70711 4.46973L4.53553 1.6413C4.7308 1.44604 4.7308 1.12945 4.53553 0.934193C4.34027 0.73893 4.02369 0.73893 3.82843 0.934193L0.646446 4.11617ZM19 3.96973L1 3.96973V4.96973L19 4.96973V3.96973Z" fill="currentColor"/>
+            </svg>
+            <span class="visually-hidden">
+              Следующий слайд
+            </span>
+          </button>
+        </div>
+        <div class="big-slider__slider">
+          <div class="big-slider__slide">
+            <img src="https://picsum.photos/seed/picsum/1920/1080" alt="" width="1000" height="1000" class="big-slider__img">
+          </div>
         </div>
       </div>
     </section>
@@ -72,53 +92,54 @@
     <section class="description">
       <div class="description__wrapper">
         <h2 class="description__heading">Подробное описание проекта</h2>
-        <div class="description__wrapper">
           <p class="description__text">
             Равным образом повышение уровня гражданского сознания требует от нас анализа экономической целесообразности принимаемых решений. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовке и реализации существующих финансовых и административных условий.
             Равным образом повышение уровня гражданского сознания требует от нас анализа экономической целесообразности принимаемых решений. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовке и реализации существующих финансовых и административных условий.
           </p>
-        </div>
       </div>
     </section>
 
     <section class="project-techs">
-      <ul class="project-techs__techs techs">
-        <li class="techs__item techs__item--ai">
-          <span class="visually-hidden">
-            <span class="techs__name">Adobe Illustrator</span>
-            или в сокращении
-          </span>
-          <a href="#" class="techs__link techs__link--ai">Ai</a>
-        </li>
-        <li class="techs__item">
-          <span class="visually-hidden">
-            <span class="techs__name">Adobe Photoshop</span>
-            или в сокращении
-          </span>
-          <a href="#" class="techs__link techs__link--ps">Ps</a>
-        </li>
-        <li class="techs__item">
-          <span class="visually-hidden">
-            <span class="techs__name">Adobe InDesign</span>
-            или в сокращении
-          </span>
-          <a href="#" class="techs__link techs__link--id">Id</a>
-        </li>
-        <li class="techs__item">
-          <span class="visually-hidden">
-            <span class="techs__name">Adobe AfterEffects</span>
-            или в сокращении
-          </span>
-          <a href="#" class="techs__link techs__link--ae">Ae</a>
-        </li>
-        <li class="techs__item">
-          <span class="visually-hidden">
-            <span class="techs__name">Adobe Premiere Pro</span>
-            или в сокращении
-          </span>
-          <a href="#" class="techs__link techs__link--pr">Pr</a>
-        </li>
-      </ul>
+      <div class="project-techs__wrapper">
+        <h2 class="project-techs__heading">Технологии, использованные на проекте:</h2>
+        <ul class="project-techs__techs techs techs--project">
+          <li class="techs__item techs__item--ai">
+            <span class="visually-hidden">
+              <span class="techs__name">Adobe Illustrator</span>
+              или в сокращении
+            </span>
+            <a href="#" class="techs__link techs__link--ai">Ai</a>
+          </li>
+          <li class="techs__item">
+            <span class="visually-hidden">
+              <span class="techs__name">Adobe Photoshop</span>
+              или в сокращении
+            </span>
+            <a href="#" class="techs__link techs__link--ps">Ps</a>
+          </li>
+          <li class="techs__item">
+            <span class="visually-hidden">
+              <span class="techs__name">Adobe InDesign</span>
+              или в сокращении
+            </span>
+            <a href="#" class="techs__link techs__link--id">Id</a>
+          </li>
+          <li class="techs__item">
+            <span class="visually-hidden">
+              <span class="techs__name">Adobe AfterEffects</span>
+              или в сокращении
+            </span>
+            <a href="#" class="techs__link techs__link--ae">Ae</a>
+          </li>
+          <li class="techs__item">
+            <span class="visually-hidden">
+              <span class="techs__name">Adobe Premiere Pro</span>
+              или в сокращении
+            </span>
+            <a href="#" class="techs__link techs__link--pr">Pr</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="hashtags">
@@ -138,40 +159,42 @@
       </div>
     </section>
 
-    <section class="catalog catalog--student">
-      <h2 class="catalog__heading">Похожие проекты</h2>
-      <ul class="catalog__list">
-        <li class="catalog__project-card project-card">
-          <a href="./project.html" class="project-card__link">
-            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
-          </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
-          <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
-            <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
-          </div>
-        </li>
-        <li class="catalog__project-card project-card">
-          <a href="./project.html" class="project-card__link">
-            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
-          </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
-          <div class="project-card__info">
-            <p class="project-card__student">Иван Иванович Иванов</p>
-            <p class="project-card__discipline">Проектирование крупных информационных проектов</p>
-          </div>
-        </li>
-        <li class="catalog__project-card project-card">
-          <a href="./project.html" class="project-card__link">
-            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
-          </a>
-          <a class="project-card__heading" href="#">Название проекта</a>
-          <div class="project-card__info">
-            <a class="project-card__student" href="#">Иван Иванович Иванов</a>
-            <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
-          </div>
-        </li>
-      </ul>
+    <section class="catalog catalog--project">
+      <div class="catalog__wrapper">
+        <h2 class="catalog__heading">Похожие проекты</h2>
+        <ul class="catalog__list">
+          <li class="catalog__project-card project-card">
+            <a href="./project.html" class="project-card__link">
+              <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
+            </a>
+            <a class="project-card__heading" href="./project.html">Название проекта</a>
+            <div class="project-card__info">
+              <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
+              <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
+            </div>
+          </li>
+          <li class="catalog__project-card project-card">
+            <a href="./project.html" class="project-card__link">
+              <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
+            </a>
+            <a class="project-card__heading" href="./project.html">Название проекта</a>
+            <div class="project-card__info">
+              <p class="project-card__student" href="./student.html">Иван Иванович Иванов</p>
+              <p class="project-card__discipline">Проектирование крупных информационных проектов</p>
+            </div>
+          </li>
+          <li class="catalog__project-card project-card">
+            <a href="./project.html" class="project-card__link">
+              <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
+            </a>
+            <a class="project-card__heading" href="./project.html">Название проекта</a>
+            <div class="project-card__info">
+              <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
+              <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 </body>
