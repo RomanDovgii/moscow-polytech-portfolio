@@ -1,0 +1,36 @@
+.accepted {
+  max-width: fit-content;
+}
+
+.accepted__text {
+  display: flex;
+  align-items: center;
+  min-height: 2rem;
+
+  position: relative;
+
+  font-size: 1.4rem;
+
+  padding-left: 3rem;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 0.1rem solid #141414;
+  }
+}
+
+.accepted__input {
+  display: none;
+}
+
+.accepted__input:checked + .accepted__text {
+  &::before {
+    background-color: #53c45c;
+  }
+}

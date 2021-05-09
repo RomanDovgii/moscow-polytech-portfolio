@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Загрузка проекта</title>
+  <title>Проверка проекта</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -97,8 +97,8 @@
           </label>
         </section>
         <section class="check-form__section check-form__section--cover">
-          <span class="check-form__name">Обложка</span>
-          <img src="https://picsum.photos/seed/picsum/400/300" alt="" class="check-form__img check-form__img--cover">
+          <h2 class="check-form__name">Обложка</h2>
+          <img src="https://picsum.photos/seed/picsum/1920/1080" alt="" class="check-form__img check-form__img--cover">
           <label class="check-form__accepted accepted">
             <input class="accepted__input" type="checkbox" name="cover">
             <span class="accepted__text">Раздел соответствует стандартам качества</span>
@@ -106,17 +106,17 @@
         </section>
         <section class="check-form__section check-form__section--project">
           <span class="check-form__name">Файлы проекта</span>
-          <ul class="check-form__uploaded-list uploaded-list">
-            <li class="uploaded-list__item"><img src="" alt=""></li>
-            <li class="uploaded-list__item"><img src="" alt=""></li>
-            <li class="uploaded-list__item"><img src="" alt=""></li>
-            <li class="uploaded-list__item"><img src="" alt=""></li>
-            <li class="uploaded-list__item"><img src="" alt=""></li>
-            <li class="uploaded-list__item"><img src="" alt=""></li>
-            <li class="uploaded-list__item"><img src="" alt=""></li>
-            <li class="uploaded-list__item"><img src="" alt=""></li>
-            <li class="uploaded-list__item"><img src="" alt=""></li>
-            <li class="uploaded-list__item"><img src="" alt=""></li>
+          <ul class="check-form__uploaded uploaded">
+            <li class="uploaded__item"><img src="https://picsum.photos/seed/picsum/1920/1080" alt=""></li>
+            <li class="uploaded__item"><img src="https://picsum.photos/seed/picsum/1920/1080" alt=""></li>
+            <li class="uploaded__item"><img src="https://picsum.photos/seed/picsum/1920/1080" alt=""></li>
+            <li class="uploaded__item"><img src="https://picsum.photos/seed/picsum/1920/1080" alt=""></li>
+            <li class="uploaded__item"><img src="https://picsum.photos/seed/picsum/1920/1080" alt=""></li>
+            <li class="uploaded__item"><img src="https://picsum.photos/seed/picsum/1920/1080" alt=""></li>
+            <li class="uploaded__item"><img src="https://picsum.photos/seed/picsum/1920/1080" alt=""></li>
+            <li class="uploaded__item"><img src="https://picsum.photos/seed/picsum/1920/1080" alt=""></li>
+            <li class="uploaded__item"><img src="https://picsum.photos/seed/picsum/1920/1080" alt=""></li>
+            <li class="uploaded__item"><img src="https://picsum.photos/seed/picsum/1920/1080" alt=""></li>
           </ul>
           <label class="check-form__accepted accepted">
             <input class="accepted__input" type="checkbox" name="files">
@@ -125,16 +125,12 @@
         </section>
         <section class="check-form__section check-form__section--video">
           <span class="check-form__name">Видео</span>
-          <video src=""></video>
+          <video class="check-form__video" src="https://www.youtube.com/watch?v=c5cGJyWg6sU" poster="https://picsum.photos/seed/picsum/1920/1080"></video>
           <label class="check-form__accepted accepted">
             <input class="accepted__input" type="checkbox" name="video">
             <span class="accepted__text">Раздел соответствует стандартам качества</span>
           </label>
         </section>
-
-        <p class="check-form__alert">
-          Проект появится в общем доступе после того, как пройдет модерацию.
-        </p>
 
         <button class="check-form__submit" type="submit">Одобрить проект</button>
       </form>

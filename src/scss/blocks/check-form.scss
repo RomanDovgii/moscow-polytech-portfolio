@@ -1,0 +1,82 @@
+@use "../mixins.scss";
+
+.check-form {
+  padding-bottom: 4rem;
+}
+
+.check-form__form {
+  max-width: 120.5rem;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.check-form__section {
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    margin-top: 5rem
+  }
+
+  &:not(:first-child) {
+    margin-top: 4rem;
+  }
+}
+
+.check-form__name {
+  font-size: 2.7rem;
+  font-weight: 700;
+
+  margin-bottom: 1rem;
+  @include mixins.gilroyFamily;
+}
+
+.check-form__project-info,
+.check-form__img,
+.check-form__video,
+.check-form__hashtags,
+.check-form__files,
+.check-form__uploaded {
+  margin-bottom: 1.2rem;
+
+  .hashtags__wrapper {
+    padding-bottom: 0;
+  }
+}
+
+.check-form__project-info {
+  font-size: 2.4rem;
+}
+
+.check-form__img {
+  &--cover {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.check-form__video {
+  width: 100%;
+  height: auto;
+
+  background-color: rgba(#000, 0.3)
+}
+
+.check-form__submit {
+  margin-top: 4rem;
+
+  border: none;
+  background: none;
+
+  font-weight: 700;
+  font-size: 2.7rem;
+  @include mixins.gilroyFamily;
+  color: #fff;
+
+  max-width: 55rem;
+  width: 100%;
+  min-height: 12rem;
+
+  background-color: #E63246;
+}
