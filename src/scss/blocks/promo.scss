@@ -1,3 +1,4 @@
+@use "../variables";
 @use "../mixins";
 
 .promo {
@@ -33,4 +34,10 @@
 
   margin-top: 6rem;
   max-width: 50.6rem;
+}
+
+@media (max-width: variables.$sm) {
+  .promo__wrapper {
+    padding-left: 2rem;
+  }
 }

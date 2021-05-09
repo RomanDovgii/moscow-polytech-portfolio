@@ -7,7 +7,6 @@
   flex-direction: column;
 
   margin-top: 8rem;
-  padding-bottom: 7.5rem;
 
   &--student {
     margin-top: 7rem;
@@ -61,6 +60,10 @@
   margin-right: 0;
 }
 
+.catalog__controls {
+  display: none;
+}
+
 @media (max-width: 1250px) {
   .catalog__list {
     &--project {
@@ -92,10 +95,20 @@
     display: none;
   }
 
+  .catalog__wrapper {
+    padding: 0;
+  }
+
   .catalog {
     &--student {
       padding-bottom: 0;
       margin-bottom: 2rem;
     }
+  }
+
+  .catalog__controls {
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
   }
 }

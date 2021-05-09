@@ -1,9 +1,5 @@
 @use "../mixins.scss";
 
-.check-form {
-  padding-bottom: 4rem;
-}
-
 .check-form__form {
   @include mixins.wrapper;
 }

@@ -1,10 +1,6 @@
 @use "../variables";
 @use "../mixins";
 
-.controls {
-  padding-bottom: 9rem;
-}
-
 .controls__wrapper {
   @include mixins.wrapper;
 

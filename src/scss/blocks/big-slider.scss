@@ -93,3 +93,19 @@
     height: 50%;
   }
 }
+
+@media (max-width: variables.$sm) {
+  .big-slider__button {
+    width: 3rem;
+    height: 3rem;
+
+    &--prev {
+      margin-left: 0;
+    }
+
+    &--next {
+      margin-right: 0;
+      transform: rotate(180deg);
+    }
+  }
+}
