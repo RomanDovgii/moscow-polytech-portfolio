@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Загрузка проекта</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="./index.html" class="header__logo logo">
+        <picture>
+          <source type="image/webp" srcset="img/polytech-logo/webp/polytech-logo@0.5.webp 0.5x,
+                                           img/polytech-logo/webp/polytech-logo@0.75.webp 0.75x,
+                                           img/polytech-logo/webp/polytech-logo@1.webp 1x,
+                                           img/polytech-logo/webp/polytech-logo@2.webp 2x,
+                                           img/polytech-logo/webp/polytech-logo@3.webp 3x,
+                                           img/polytech-logo/webp/polytech-logo@4.webp 4x,
+                                          ">
+
+          <source type="image/png" srcset="img/polytech-logo/png/polytech-logo@0.5.png 0.5x,
+                                           img/polytech-logo/png/polytech-logo@0.75.png 0.75x,
+                                           img/polytech-logo/png/polytech-logo@1.png 1x,
+                                           img/polytech-logo/png/polytech-logo@2.png 2x,
+                                           img/polytech-logo/png/polytech-logo@3.png 3x,
+                                           img/polytech-logo/png/polytech-logo@4.png 4x,
+                                          ">
+          <img width="125" height="37" src="./img/polytech-logo/png/polytech-logo@1.png" alt="Московский Политех" class="logo__img">
+        </picture>
+      </a>
+      <nav class="header__navigation navigation">
+        <a href="#" class="navigation__link">Поступающим</a>
+        <a href="#" class="navigation__link">Обучающимся</a>
+        <a href="#" class="navigation__link">Работникам</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="promo promo--upload">
+      <div class="promo__wrapper">
+        <h1 class="promo__heading">Проверка проекта <br> от студента <span class="promo__group">группы 191-324</span> <br>Иванова Ивана Ивановича <br> с направления промышленный дизайн</h1>
+        <p class="promo__text">
+          Просим быть объективными при проверке работы, а также недопускать некачественные изображения или же тексты, содержащие мат, грамматические ошибки или любые другие опечатки, так как после данной проверки всё станет общедоступным, а, следовательно, начнет представлять Московский Политех.
+        </p>
+      </div>
+    </section>
+    <section class="check-form">
+      <form action="" class="check-form__form">
+        <section class="check-form__section check-form__section--name">
+          <h2 class="check-form__name">Название проекта</h2>
+          <p class="check-form__project-info check-form__project-info--name">Внутренне познание и брутализм</p>
+          <label class="check-form__accepted accepted">
+            <input class="accepted__input" type="checkbox" name="name">
+            <span class="accepted__text">Раздел соответствует стандартам качества</span>
+          </label>
+        </section>
+        <section class="check-form__section check-form__section--discipline">
+          <h2 class="check-form__name">Название дисциплины</h2>
+          <p class="check-form__project-info check-form__project-info--discipline">Графический дизайн</p>
+          <label class="check-form__accepted accepted">
+            <input class="accepted__input" type="checkbox" name="descipline">
+            <span class="accepted__text">Раздел соответствует стандартам качества</span>
+          </label>
+        </section>
+        <section class="check-form__section check-form__section--description">
+          <h2 class="check-form__name">Описание проекта</h2>
+          <p class="check-form__project-info check-form__project-info--description">
+            Равным образом повышение уровня гражданского сознания требует от нас анализа экономической целесообразности принимаемых решений. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовке и реализации существующих финансовых и административных условий. Равным образом повышение уровня гражданского сознания требует от нас анализа экономической целесообразности принимаемых решений. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовке и реализации существующих финансовых и административных условий.
+          </p>
+          <label class="check-form__accepted accepted">
+            <input class="accepted__input" type="checkbox" name="description">
+            <span class="accepted__text">Раздел соответствует стандартам качества</span>
+          </label>
+        </section>
+        <section class="check-form__section check-form__section--tags">
+          <span class="check-form__name">Теги</span>
+          <div class="check-form__hashtags hashtags">
+            <div class="hashtags__wrapper">
+              <ul class="hashtags__list">
+                <li class="hashtags__item">
+                  <a href="">Брутализм</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">Самопознание</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">Демагогия</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <label class="check-form__accepted accepted">
+            <input class="accepted__input" type="checkbox" name="tags">
+            <span class="accepted__text">Раздел соответствует стандартам качества</span>
+          </label>
+        </section>
+        <section class="check-form__section check-form__section--cover">
+          <span class="check-form__name">Обложка</span>
+          <img src="https://picsum.photos/seed/picsum/400/300" alt="" class="check-form__img check-form__img--cover">
+          <label class="check-form__accepted accepted">
+            <input class="accepted__input" type="checkbox" name="cover">
+            <span class="accepted__text">Раздел соответствует стандартам качества</span>
+          </label>
+        </section>
+        <section class="check-form__section check-form__section--project">
+          <span class="check-form__name">Файлы проекта</span>
+          <ul class="check-form__uploaded-list uploaded-list">
+            <li class="uploaded-list__item"><img src="" alt=""></li>
+            <li class="uploaded-list__item"><img src="" alt=""></li>
+            <li class="uploaded-list__item"><img src="" alt=""></li>
+            <li class="uploaded-list__item"><img src="" alt=""></li>
+            <li class="uploaded-list__item"><img src="" alt=""></li>
+            <li class="uploaded-list__item"><img src="" alt=""></li>
+            <li class="uploaded-list__item"><img src="" alt=""></li>
+            <li class="uploaded-list__item"><img src="" alt=""></li>
+            <li class="uploaded-list__item"><img src="" alt=""></li>
+            <li class="uploaded-list__item"><img src="" alt=""></li>
+          </ul>
+          <label class="check-form__accepted accepted">
+            <input class="accepted__input" type="checkbox" name="files">
+            <span class="accepted__text">Раздел соответствует стандартам качества</span>
+          </label>
+        </section>
+        <section class="check-form__section check-form__section--video">
+          <span class="check-form__name">Видео</span>
+          <video src=""></video>
+          <label class="check-form__accepted accepted">
+            <input class="accepted__input" type="checkbox" name="video">
+            <span class="accepted__text">Раздел соответствует стандартам качества</span>
+          </label>
+        </section>
+
+        <p class="check-form__alert">
+          Проект появится в общем доступе после того, как пройдет модерацию.
+        </p>
+
+        <button class="check-form__submit" type="submit">Одобрить проект</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

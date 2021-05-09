@@ -1,0 +1,117 @@
+@use "../mixins.scss";
+
+.upload-form__form {
+  max-width: 120.5rem;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 9rem;
+}
+
+.upload-form__label {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 55.5rem;
+
+  &:first-child {
+    margin-top: 5rem;
+  }
+
+  &:not(:first-child) {
+    margin-top: 4rem;
+  }
+}
+
+.upload-form__name {
+  font-size: 2.7rem;
+  font-weight: 700;
+
+  margin-bottom: 1.2rem;
+  @include mixins.gilroyFamily;
+}
+
+.upload-form__description {
+  margin-top: -1.1rem;
+  margin-bottom: 1.2rem;
+
+  font-size: 1.4rem;
+}
+
+.upload-form__input {
+  min-height: 5.5rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  line-height: 2.1rem;
+
+  border: 0.1rem solid #1e1e1e;
+  background: none;
+
+  &--description {
+    resize: none;
+    min-height: 15rem;
+
+    padding-top: 2rem;
+  }
+
+  &--cover,
+  &--project,
+  &--video {
+    padding: 0;
+    display: none;
+  }
+}
+
+.upload-form__visual-input {
+  min-height: 15rem;
+  min-width: 55rem;
+  border: 0.1rem solid #1e1e1e;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    border: 1px solid #1e1e1e;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin-top: -2.6rem;
+    margin-left: -2.6rem;
+
+    background-image: url("../img/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform: rotate(-90deg);
+  }
+}
+
+.upload-form__alert {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  font-size: 1.4rem;
+}
+
+.upload-form__submit {
+  border: none;
+  background: none;
+
+  font-weight: 700;
+  font-size: 2.7rem;
+  @include mixins.gilroyFamily;
+  color: #fff;
+
+  max-width: 55rem;
+  width: 100%;
+  min-height: 12rem;
+
+  background-color: #E63246;
+}
