@@ -5,10 +5,7 @@
 }
 
 .check-form__form {
-  max-width: 120.5rem;
-  width: 100%;
-
-  margin: 0 auto;
+  @include mixins.wrapper;
 }
 
 .check-form__section {

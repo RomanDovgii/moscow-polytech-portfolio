@@ -38,3 +38,12 @@
   font-size: 2.7rem;
   line-height: 4rem;
 }
+
+@mixin wrapper {
+  max-width: 124.5rem;
+  width: 100%;
+  margin: 0 auto;
+
+  padding-right: 2rem;
+  padding-left: 2rem;
+}

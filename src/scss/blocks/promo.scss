@@ -3,9 +3,6 @@
 .promo {
   min-height: 100vh;
 
-  display: flex;
-  justify-content: center;
-
   background:
   linear-gradient(rgba(#000, 0.3), rgba(#000, 0.2)),
   url("https://picsum.photos/1920/1080");
@@ -19,10 +16,9 @@
 }
 
 .promo__wrapper {
-  max-width: 120.5rem;
-  width: 100%;
-
+  @include mixins.wrapper;
   padding-top: 19rem;
+  padding-bottom: 10rem;
   padding-left: 5.5rem;
 }
 

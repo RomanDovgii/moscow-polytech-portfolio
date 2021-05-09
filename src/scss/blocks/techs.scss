@@ -1,3 +1,4 @@
+@use "../variables.scss";
 @use "../mixins.scss";
 
 .techs {
@@ -6,13 +7,10 @@
   justify-content: space-between;
 
   margin-left: -1.5rem;
+  margin-top: -1.5rem;
 
   &--project {
     justify-content: flex-start;
-
-    a {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -21,7 +19,7 @@
 }
 
 .techs__link {
-  margin-bottom: 2.9rem;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,5 +56,11 @@
 
   &--pr {
     background-color: #B704E3;
+  }
+}
+
+@media (max-width: variables.$sm) {
+  .techs {
+    flex-wrap: wrap;
   }
 }

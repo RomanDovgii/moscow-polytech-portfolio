@@ -1,3 +1,4 @@
+@use "../variables";
 @use "../mixins";
 
 .select {
@@ -46,4 +47,16 @@
   @include mixins.mainText;
   color: #000;
   line-height: 3rem;
+}
+
+@media (max-width: variables.$md) {
+  .select {
+    flex-basis: 49%;
+  }
+}
+
+@media (max-width: variables.$sm) {
+  .select {
+    flex-basis: 100%;
+  }
 }

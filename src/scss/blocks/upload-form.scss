@@ -1,9 +1,7 @@
 @use "../mixins.scss";
 
 .upload-form__form {
-  max-width: 120.5rem;
-  width: 100%;
-  margin: 0 auto;
+  @include mixins.wrapper;
 
   display: flex;
   flex-direction: column;
@@ -66,7 +64,8 @@
 
 .upload-form__visual-input {
   min-height: 15rem;
-  min-width: 55rem;
+  max-width: 55rem;
+  width: 100%;
   border: 0.1rem solid #1e1e1e;
   position: relative;
 

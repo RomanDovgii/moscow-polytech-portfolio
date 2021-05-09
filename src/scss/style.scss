@@ -2,15 +2,12 @@
 @use "./mixins.scss";
 @use "./general.scss";
 
-@use "./blocks/header.scss";
 @use "./blocks/logo.scss";
 @use "./blocks/navigation.scss";
-
 @use "./blocks/promo.scss";
 @use "./blocks/filter.scss";
 @use "./blocks/search.scss";
 @use "./blocks/select.scss";
-@use "./blocks/catalog.scss";
 @use "./blocks/project-card.scss";
 @use "./blocks/page-nav.scss";
 @use "./blocks/project-popup.scss";
@@ -25,3 +22,6 @@
 @use "./blocks/check-form.scss";
 @use "./blocks/uploaded.scss";
 @use "./blocks/accepted.scss";
+
+@use "./blocks/header.scss";
+@use "./blocks/catalog.scss";
