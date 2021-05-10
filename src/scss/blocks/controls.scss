@@ -1,6 +1,12 @@
 @use "../variables";
 @use "../mixins";
 
+.controls {
+  &--student {
+    margin-top: 4rem
+  }
+}
+
 .controls__wrapper {
   @include mixins.wrapper;
 
