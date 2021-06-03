@@ -1,0 +1,48 @@
+html{font-size: 62.5%;}
+
+.login-form__form {
+    max-width: 124.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.login-form__label:not(:first-child) {
+    margin-top: 4rem;
+}
+.login-form__label {
+    display: flex;
+    flex-direction: column;
+    max-width: 55.5rem;
+}
+
+.login-form__name {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    font-family: "Gilroy",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+.login-form__input {
+    min-height: 5.5rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    line-height: 2.1rem;
+    border: .1rem solid #1e1e1e;
+    background: none;
+}
+.login-form__submit {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-size: 2.7rem;
+    font-family: "Gilroy",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    color: #fff;
+    max-width: 55rem;
+    width: 100%;
+    min-height: 12rem;
+    background-color: #e63246;
+}
