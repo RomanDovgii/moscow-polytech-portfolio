@@ -1,3 +1,6 @@
+@use "../variables.scss";
+@use "../mixins.scss";
+
 .header {
   width: 100%;
   padding-top: 3.2rem;
@@ -7,18 +10,36 @@
   top: 0;
   left: 0;
   z-index: 1000;
-
-  display: flex;
-  justify-content: center;
 }
 
 .header__wrapper {
-  max-width: 120.5rem;
-  width: 100%;
+  @include mixins.wrapper;
   display: flex;
 }
 
 .header__navigation {
   margin-right: 0;
   margin-left: auto;
+}
+
+.header__button {
+  display: none;
+}
+
+@media (max-width: variables.$sm) {
+  .header__navigation {
+    display: none;
+  }
+
+  .header__button {
+    display: flex;
+    background: none;
+    border: none;
+
+    width: 3.8rem;
+    height: 3.8rem;
+
+    margin-right: 0;
+    margin-left: auto;
+  }
 }

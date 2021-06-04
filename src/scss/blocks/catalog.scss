@@ -1,4 +1,5 @@
-@use "../mixins.scss";
+@use "../variables";
+@use "../mixins";
 
 .catalog {
   display: flex;
@@ -6,7 +7,6 @@
   flex-direction: column;
 
   margin-top: 8rem;
-  padding-bottom: 7.5rem;
 
   &--student {
     margin-top: 7rem;
@@ -37,18 +37,17 @@
   justify-content: center;
 
   margin-left: -0.4rem;
-  margin-top: -0.4rem
+  margin-top: -0.4rem;
 }
 
 .catalog__project-card {
-  margin-top: 0.4rem;
-  margin-left: 0.4rem;
-  flex-basis: 40rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  flex-basis: 39.5rem;
 }
 
 .catalog__wrapper {
-  max-width: 121.5rem;
-  width: 100%;
+  @include mixins.wrapper;
 
   display: flex;
   flex-direction: column;
@@ -59,4 +58,61 @@
   margin-top: 4rem;
   margin-left: auto;
   margin-right: 0;
+}
+
+.catalog__controls {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .catalog__list {
+    &--project {
+      justify-content: space-between;
+
+      li {
+        flex-basis: 49%;
+      }
+
+      li:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: variables.$sm) {
+  .catalog__list {
+    li {
+      flex-basis: 100%;
+    }
+
+    li:last-child {
+      display: block;
+    }
+  }
+
+  .catalog__page-nav {
+    display: none;
+  }
+
+  .catalog__wrapper {
+    padding: 0;
+  }
+
+  .catalog__heading {
+    padding-left: 2rem;
+  }
+
+  .catalog {
+    &--student {
+      padding-bottom: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .catalog__controls {
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
+  }
 }

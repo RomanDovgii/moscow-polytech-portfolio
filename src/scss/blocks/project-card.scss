@@ -1,3 +1,4 @@
+@use "../variables";
 @use "../mixins";
 
 .project-card {
@@ -13,6 +14,7 @@
 .project-card__img {
   width: 100%;
   height: 30rem;
+  object-fit: cover;
   background-color: #B86EAC;
 }
 
@@ -49,4 +51,15 @@
 
 .project-card__discipline {
   text-align: right;
+}
+
+@media (max-width: variables.$sm) {
+  .project-card__info {
+    flex-direction: column;
+  }
+
+  .project-card__discipline {
+    margin-top: 1rem;
+    text-align: left;
+  }
 }

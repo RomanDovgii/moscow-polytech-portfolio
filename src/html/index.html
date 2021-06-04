@@ -30,6 +30,16 @@
           <img width="125" height="37" src="./img/polytech-logo/png/polytech-logo@1.png" alt="Московский Политех" class="logo__img">
         </picture>
       </a>
+      <button class="header__button">
+        <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="26.0052" x2="38" y2="26.0052" stroke="white" stroke-width="1.7"/>
+          <line y1="12.7491" x2="38" y2="12.7491" stroke="white" stroke-width="1.7"/>
+          <line y1="1.15" x2="38" y2="1.15" stroke="white" stroke-width="1.7"/>
+        </svg>
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
       <nav class="header__navigation navigation">
         <a href="#" class="navigation__link">Поступающим</a>
         <a href="#" class="navigation__link">Обучающимся</a>
@@ -46,7 +56,7 @@
         </p>
       </div>
     </section>
-    <section class="filter" id="filters">
+    <section class="filter">
       <div class="filter__wrapper">
         <h2 class="visually-hidden">Фильтры</h2>
         <div class="filter__tabs">
@@ -55,7 +65,7 @@
           </a>
           <a href="./upload.html" class="filter__upload">Загрузить проект</a>
         </div>
-        <form class="filter__filters">
+        <form class="filter__filters" id="filters">
 
           <label class="filter__search search">
             <span class="visually-hidden">Поиск по названию</span>
@@ -274,60 +284,10 @@
           </a>
         </div>
       </div>
+      <div class="catalog__controls controls">
+        <a href="#" class="controls__more">Больше работ</a>
+      </div>
     </section>
   </main>
-
-  <div class="project-popup">
-    <h2 class="project-popup__name">Название проекта</h2>
-    <p class="project-popup__discipline">Дисциплина</p>
-    <div class="porject-popup__info">
-      <a href="#" class="project-popup__student">Иванов Иван Иванович</a>
-      <p class="project-popup__course">3 курс</p>
-      <p class="project-popup__faculty">Дизайн</p>
-    </div>
-    <div class="project-popup__slider"></div>
-    <p class="project-popup__description">
-      Равным образом повышение уровня гражданского сознания требует от нас анализа экономической целесообразности принимаемых решений. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовке и реализации существующих финансовых и административных условий.
-    </p>
-    <button class="project-popup__more">Больше о проекте</button>
-    <ul class="project-popup__hastags hashtags">
-      <li class="hashtags__item"><a href="#" class="hashtags__link">#Хэштег</a></li>
-      <li class="hashtags__item"><a href="#" class="hashtags__link">#Хэштег</a></li>
-      <li class="hashtags__item"><a href="#" class="hashtags__link">#Хэштег</a></li>
-    </ul>
-    <section class="project-popup__catalog catalog">
-      <h2 class="catalog__heading">Больше работ</h2>
-      <ul class="catalog__list">
-        <li class="catalog__project-card project-card">
-          <a href="./project.html" class="project-card__link">
-            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
-          </a>
-          <a class="project-card__heading" href="./project.html">Название проекта</a>
-          <div class="project-card__info">
-            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
-            <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
-          </div>
-        </li>
-        <li class="catalog__project-card project-card">
-          <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
-          <a class="project-card__heading" href="./project.html">Название проекта</a>
-          <div class="project-card__info">
-            <p class="project-card__student">Иван Иванович Иванов</p>
-            <p class="project-card__discipline">Проектирование крупных информационных проектов</p>
-          </div>
-        </li>
-        <li class="catalog__project-card project-card">
-          <a href="./project.html" class="project-card__link">
-            <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" class="project-card__img">
-          </a>
-          <a class="project-card__heading" href="./project.html">Название проекта</a>
-          <div class="project-card__info">
-            <a class="project-card__student" href="./student.html">Иван Иванович Иванов</a>
-            <a class="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </div>
 </body>
 </html>

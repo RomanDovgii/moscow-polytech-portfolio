@@ -1,3 +1,4 @@
+@use "../variables";
 @use "../mixins";
 
 .search__input {
@@ -15,5 +16,15 @@
 
   &::placeholder {
     color: #fff;
+  }
+}
+
+@media (max-width: variables.$sm) {
+  .search {
+    width: 100%;
+  }
+
+  .search__input {
+    width: 100%;
   }
 }

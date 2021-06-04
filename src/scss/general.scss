@@ -26,3 +26,7 @@ body {
   @include mixins.verdanaFamily;
   background-color: #eee;
 }
+
+main {
+  padding-bottom: 3rem;
+}

@@ -1,10 +1,9 @@
+@use "../variables";
 @use "../mixins";
 
 .filter__wrapper {
-  max-width: 120.5rem;
-  width: 100%;
+  @include mixins.wrapper;
 
-  margin: 0 auto;
   margin-top: -11.4rem;
 }
 
@@ -66,4 +65,32 @@
 .filter__select {
   margin-top: 4.6rem;
   flex-basis: 33.6rem;
+}
+
+@media (max-width: variables.$sm) {
+  .filter__wrapper {
+    padding: 0;
+  }
+
+  .filter__filters {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .filter__select {
+    margin-top: 3rem;
+  }
+
+  .filter__tabs {
+    flex-direction: column;
+  }
+
+  .filter__projects,
+  .filter__upload {
+    min-width: 50%;
+  }
+
+  .filter__upload {
+    order: -1;
+  }
 }

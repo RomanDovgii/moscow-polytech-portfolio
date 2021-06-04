@@ -1,24 +1,21 @@
-@use "../mixins.scss";
+@use "../variables";
+@use "../mixins";
 
 .controls {
-  padding-bottom: 9rem;
+  &--student {
+    margin-top: 4rem
+  }
 }
 
 .controls__wrapper {
-  max-width: 120.5rem;
-  width: 100%;
-
-  margin: 0 auto;
+  @include mixins.wrapper;
 
   display: flex;
 }
 
-.controls__more {
-  display: none;
-}
-
 .controls__message,
-.controls__download {
+.controls__download,
+.controls__more {
   max-width: 50%;
   width: 100%;
   min-height: 12.3rem;
@@ -41,4 +38,26 @@
 
 .controls__message {
   background-color: #E63246;
+}
+
+.controls__more {
+  display: none;
+}
+
+@media (max-width: variables.$sm) {
+  .controls__wrapper {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .controls__more {
+    display: flex;
+    background-color: #4B6EB9;
+  }
+
+  .controls__message,
+  .controls__download,
+  .controls__more {
+    max-width: 100%;
+  }
 }

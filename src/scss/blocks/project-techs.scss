@@ -1,9 +1,7 @@
 @use "../mixins.scss";
 
 .project-techs__wrapper {
-  max-width: 120.5rem;
-  width: 100%;
-  margin: 0 auto;
+  @include mixins.wrapper;
   padding-bottom: 2rem;
 }
 
