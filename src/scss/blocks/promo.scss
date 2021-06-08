@@ -13,9 +13,17 @@
 
   background-attachment: fixed;
 
+  display: flex;
+  flex-direction: column;
+
   &--student {
     min-height: 25vh;
     padding-bottom: 15vh;
+  }
+
+  &--signup {
+    min-height: 10vh;
+    padding-bottom: 0;
   }
 }
 
@@ -24,6 +32,14 @@
   padding-top: 19rem;
   padding-bottom: 20rem;
   padding-left: 5.5rem;
+
+  &--anchor {
+    padding: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
 }
 
 .promo__heading {
@@ -37,6 +53,22 @@
 
   margin-top: 6rem;
   max-width: 50.6rem;
+}
+
+.promo__anchor {
+  @include mixins.heading;
+
+  text-decoration: none;
+  background-color: #4b6eb9;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 29.7rem;
+  min-height: 11.4rem;
+  margin-top: 10rem;
 }
 
 @media (max-width: variables.$sm) {

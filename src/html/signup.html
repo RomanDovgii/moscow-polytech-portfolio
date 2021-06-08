@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация</title>
-    <link rel="stylesheet" href="signup.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>портфолио Иванов Иван Иванов</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="signup-form">
-        <form action="" class="signup-form__form">
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="./index.html" class="header__logo logo">
+        <picture>
+          <source type="image/webp" srcset="img/polytech-logo/webp/polytech-logo@0.5.webp 0.5x,
+                                           img/polytech-logo/webp/polytech-logo@0.75.webp 0.75x,
+                                           img/polytech-logo/webp/polytech-logo@1.webp 1x,
+                                           img/polytech-logo/webp/polytech-logo@2.webp 2x,
+                                           img/polytech-logo/webp/polytech-logo@3.webp 3x,
+                                           img/polytech-logo/webp/polytech-logo@4.webp 4x,
+                                          ">
 
-            <label for="" class="signup-form__label signup-form__label--name">
-                <span class="signup-form__name">Имя</span>
-                <input type="text" class="signup-form__input">
-            </label>
-
-            <label for="" class="signup-form__label signup-form__label--surname">
-                <span class="signup-form__name">Фамилия</span>
-                <input type="text" class="signup-form__input">
-            </label>
-
-            <label for="" class="signup-form__label signup-form__label--group">
-                <span class="signup-form__name">Учебная группа</span>
-                <input type="text" class="signup-form__input">
-            </label>
-
-            <label for="" class="signup-form__label signup-form__label--mail">
-                <span class="signup-form__name">Email</span>
-                <input type="text" class="signup-form__input">
-            </label>
-
-            <label for="" class="signup-form__label signup-form__label--password">
-                <span class="signup-form__name">Придумайте пароль</span>
-                <input type="text" class="signup-form__input">
-            </label>
-
-            <label for="" class="signup-form__label signup-form__label--password">
-                <span class="signup-form__name">Повторите пароль</span>
-                <input type="text" class="signup-form__input">
-            </label>
-
-
-
-            <button type="submit" class="signup-form__submit">Зарегистрироваться</button>
-
-        </form> 
+          <source type="image/png" srcset="img/polytech-logo/png/polytech-logo@0.5.png 0.5x,
+                                           img/polytech-logo/png/polytech-logo@0.75.png 0.75x,
+                                           img/polytech-logo/png/polytech-logo@1.png 1x,
+                                           img/polytech-logo/png/polytech-logo@2.png 2x,
+                                           img/polytech-logo/png/polytech-logo@3.png 3x,
+                                           img/polytech-logo/png/polytech-logo@4.png 4x,
+                                          ">
+          <img width="125" height="37" src="./img/polytech-logo/png/polytech-logo@1.png" alt="Московский Политех" class="logo__img">
+        </picture>
+      </a>
+      <button class="header__button">
+        <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="26.0052" x2="38" y2="26.0052" stroke="white" stroke-width="1.7"/>
+          <line y1="12.7491" x2="38" y2="12.7491" stroke="white" stroke-width="1.7"/>
+          <line y1="1.15" x2="38" y2="1.15" stroke="white" stroke-width="1.7"/>
+        </svg>
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
+      <nav class="header__navigation navigation">
+        <a href="#" class="navigation__link">Поступающим</a>
+        <a href="#" class="navigation__link">Обучающимся</a>
+        <a href="#" class="navigation__link">Работникам</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="promo promo--signup">
+      <div class="promo__wrapper">
+        <h1 class="promo__heading">Регистрация</h1>
+        <p class="promo__text">
+          Форма буквально на минуту,<br>
+          которая откроет вам доступ<br>
+          ко всем возможностям<br>
+          портфолио Московского Политеха
+        </p>
+      </div>
     </section>
+  </main>
 </body>
 </html>
