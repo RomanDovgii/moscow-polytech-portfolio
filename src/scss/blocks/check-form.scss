@@ -1,5 +1,9 @@
 @use "../mixins.scss";
 
+.check-form {
+  margin-bottom: 3rem;
+}
+
 .check-form__form {
   @include mixins.wrapper;
 }

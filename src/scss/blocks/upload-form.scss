@@ -1,5 +1,9 @@
 @use "../mixins.scss";
 
+.upload-form {
+  padding-bottom: 3rem;
+}
+
 .upload-form__form {
   @include mixins.wrapper;
 

@@ -1,18 +1,5 @@
 @use "../mixins.scss";
 
-.main--login {
-    padding-bottom: 0;
-}
-
-.promo__wrapper--invitation {
-    padding-top: 19rem;
-    padding-bottom: 0;
-}
-
-.promo__wrapper--login {
-    padding-top: 6rem;
-}
-
 .login-form__form {
     max-width: 124.5rem;
     width: 100%;
@@ -56,7 +43,7 @@
     background: none;
     font-weight: 700;
     font-size: 2.7rem;
-    @include mixins.gilroyFamily; 
+    @include mixins.gilroyFamily;
     color: #fff;
     max-width: 55rem;
     width: 100%;

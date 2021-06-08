@@ -1,5 +1,9 @@
 @use "../mixins.scss";
 
+.signup-form {
+  margin-bottom: 3rem;
+}
+
 .signup-form__form {
   @include mixins.wrapper;
 

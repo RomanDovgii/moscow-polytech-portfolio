@@ -8,12 +8,17 @@
 
   margin-top: 8rem;
 
+  &--index {
+    margin-bottom: 3rem;
+  }
+
   &--student {
     margin-top: 7rem;
   }
 
   &--project {
     margin-top: 0;
+    margin-bottom: 3rem;
   }
 }
 

@@ -25,6 +25,10 @@
     min-height: 10vh;
     padding-bottom: 0;
   }
+
+  &--login {
+    padding-bottom: 0;
+  }
 }
 
 .promo__wrapper {
@@ -39,6 +43,11 @@
     padding-right: 2rem;
     margin-top: auto;
     margin-bottom: 0;
+  }
+
+  &--login {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
