@@ -69,10 +69,10 @@
   padding-right: 2rem;
   padding-left: 2rem;
 
-
   min-width: 29.7rem;
   min-height: 11.4rem;
-  margin-top: 10rem;
+
+  max-width: fit-content;
 }
 
 @media (max-width: variables.$sm) {
@@ -82,5 +82,9 @@
 
   .promo__heading {
     line-height: 3.5rem;
+  }
+
+  .promo__anchor {
+    max-width: 100%;
   }
 }

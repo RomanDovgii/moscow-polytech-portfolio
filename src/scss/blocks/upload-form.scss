@@ -46,6 +46,8 @@
   border: 0.1rem solid #1e1e1e;
   background: none;
 
+  @include mixins.verdanaFamily;
+
   &--description {
     resize: none;
     min-height: 15rem;
@@ -112,4 +114,6 @@
   min-height: 12rem;
 
   background-color: #E63246;
+
+  cursor: pointer;
 }

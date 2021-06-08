@@ -50,19 +50,6 @@
   <main>
     <section class="promo">
       <div class="promo__wrapper">
-        <h1 class="promo__heading">Ругистрация нового пользователя
-        </h1>
-        <p class="promo__text">
-          Буквально пара минут уйдет на заполнение формы регистрации,<br>
-          зато потом работодатель сэкономит дни в поисках вас.
-        </p>
-      </div>
-      <div class="promo__wrapper promo__wrapper--anchor">
-        <a href="#upload-form" class="promo__anchor">Зарегистрироваться</a>
-      </div>
-    </section>
-    <section class="promo promo--signup">
-      <div class="promo__wrapper">
         <h1 class="promo__heading">Регистрация</h1>
         <p class="promo__text">
           Форма буквально на минуту,<br>
@@ -71,6 +58,55 @@
           портфолио Московского Политеха
         </p>
       </div>
+      <div class="promo__wrapper promo__wrapper--anchor">
+        <a href="#signup-form" class="promo__anchor">Зарегистрироваться</a>
+      </div>
+    </section>
+    <section class="signup-form" id="signup-form">
+      <h2 class="visually-hidden">Форма Регистрации пользователя</h2>
+      <form action="" class="signup-form__form">
+        <label class="signup-form__label signup-form__label--name">
+          <span class="signup-form__name">Имя</span>
+          <input class="signup-form__input signup-form__input--name" type="text" name="name" placeholder="Иван" required>
+        </label>
+
+        <label class="signup-form__label">
+          <span class="signup-form__name">Фамилия</span>
+          <input class="signup-form__input" type="text" name="discipline" placeholder="Иванов" required>
+        </label>
+
+        <label class="signup-form__label">
+          <span class="signup-form__name">Электронная почта</span>
+          <input class="signup-form__input" type="email" name="discipline" placeholder="mospolytech@gmail.com" required>
+        </label>
+
+        <label class="signup-form__label">
+          <span class="signup-form__name">Группа</span>
+          <input class="signup-form__input" type="text" name="discipline" placeholder="201-321" required>
+        </label>
+
+        <label class="signup-form__label">
+          <span class="signup-form__name">Пароль</span>
+          <input class="signup-form__input" type="password" name="discipline" placeholder="до 30 символов" required>
+        </label>
+
+        <label class="signup-form__label">
+          <span class="signup-form__name">Повторите пароль</span>
+          <input class="signup-form__input" type="password" name="discipline" placeholder="до 30 символов" required>
+        </label>
+
+        <label class="signup-form__label">
+          <span class="signup-form__name">Повторите пароль</span>
+          <input class="signup-form__input" type="password" name="discipline" placeholder="до 30 символов" required>
+        </label>
+
+        <label class="signup-form__label signup-form__label--agreement">
+          <input class="signup-form__input" type="checkbox" name="discipline" required>
+          <span class="signup-form__name signup-form__name--data">Я согласен на обработку данных</span>
+        </label>
+
+        <button class="signup-form__submit" type="submit">Зарегистрироваться</button>
+      </form>
     </section>
   </main>
 </body>
