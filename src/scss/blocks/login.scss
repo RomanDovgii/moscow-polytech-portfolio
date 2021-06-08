@@ -1,14 +1,15 @@
 @use "../mixins.scss";
 
-.main-login {
+.main--login {
     padding-bottom: 0;
 }
-.promo__wrapper-invitation {
+
+.promo__wrapper--invitation {
     padding-top: 19rem;
     padding-bottom: 0;
 }
 
-.promo__wrapper-login {
+.promo__wrapper--login {
     padding-top: 6rem;
 }
 
@@ -55,7 +56,7 @@
     background: none;
     font-weight: 700;
     font-size: 2.7rem;
-    font-family: "Gilroy",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    @include mixins.gilroyFamily; 
     color: #fff;
     max-width: 55rem;
     width: 100%;
