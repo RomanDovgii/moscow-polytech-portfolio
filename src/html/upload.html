@@ -12,21 +12,8 @@
     <div class="header__wrapper">
       <a href="./index.html" class="header__logo logo">
         <picture>
-          <source type="image/webp" srcset="img/polytech-logo/webp/polytech-logo@0.5.webp 0.5x,
-                                           img/polytech-logo/webp/polytech-logo@0.75.webp 0.75x,
-                                           img/polytech-logo/webp/polytech-logo@1.webp 1x,
-                                           img/polytech-logo/webp/polytech-logo@2.webp 2x,
-                                           img/polytech-logo/webp/polytech-logo@3.webp 3x,
-                                           img/polytech-logo/webp/polytech-logo@4.webp 4x,
-                                          ">
-
-          <source type="image/png" srcset="img/polytech-logo/png/polytech-logo@0.5.png 0.5x,
-                                           img/polytech-logo/png/polytech-logo@0.75.png 0.75x,
-                                           img/polytech-logo/png/polytech-logo@1.png 1x,
-                                           img/polytech-logo/png/polytech-logo@2.png 2x,
-                                           img/polytech-logo/png/polytech-logo@3.png 3x,
-                                           img/polytech-logo/png/polytech-logo@4.png 4x,
-                                          ">
+          <source type="image/webp" srcset="img/polytech-logo/webp/polytech-logo@0.5.webp 0.5x, img/polytech-logo/webp/polytech-logo@0.75.webp 0.75x, img/polytech-logo/webp/polytech-logo@1.webp 1x, img/polytech-logo/webp/polytech-logo@2.webp 2x, img/polytech-logo/webp/polytech-logo@3.webp 3x, img/polytech-logo/webp/polytech-logo@4.webp 4x">
+          <source type="image/png" srcset="img/polytech-logo/png/polytech-logo@0.5.png 0.5x,img/polytech-logo/png/polytech-logo@0.75.png 0.75x,img/polytech-logo/png/polytech-logo@1.png 1x,img/polytech-logo/png/polytech-logo@2.png 2x,img/polytech-logo/png/polytech-logo@3.png 3x,img/polytech-logo/png/polytech-logo@4.png 4x">
           <img width="125" height="37" src="./img/polytech-logo/png/polytech-logo@1.png" alt="Московский Политех" class="logo__img">
         </picture>
       </a>
@@ -64,7 +51,7 @@
     </section>
     <section class="upload-form" id="upload-form">
       <h2 class="visually-hidden">Форма загрузки проекта</h2>
-      <form action="" class="upload-form__form">
+      <form class="upload-form__form">
         <label class="upload-form__label upload-form__label--name">
           <span class="upload-form__name">Название проекта</span>
           <input class="upload-form__input upload-form__input--name" type="text" name="name" placeholder="до 30 символов" required>
@@ -88,18 +75,18 @@
           <span class="upload-form__name">Обложка</span>
           <span class="upload-form__description">Файл jpeg, png, gif с пропорциями 3:4</span>
           <input class="upload-form__input upload-form__input--cover" type="file" name="cover" accept="image/jpeg, image/png, image/gif" required>
-          <div class="upload-form__visual-input"></div>
+          <span class="upload-form__visual-input"></span>
         </label>
         <label class="upload-form__label upload-form__label--project">
           <span class="upload-form__name">Проект</span>
           <span class="upload-form__description">До 10 файлов jpeg, png, gif с пропорциями 3:4</span>
           <input class="upload-form__input upload-form__input--project" type="file" name="project" accept="image/jpeg, image/png, image/gif" multiple required>
-          <div class="upload-form__visual-input"></div>
+          <span class="upload-form__visual-input"></span>
         </label>
         <label class="upload-form__label upload-form__label--video">
           <span class="upload-form__name">Видео</span>
           <input class="upload-form__input upload-form__input--video" type="file" name="video" accept="video/*" required>
-          <div class="upload-form__visual-input"></div>
+          <span class="upload-form__visual-input"></span>
         </label>
 
         <p class="upload-form__alert">
